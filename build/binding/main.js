@@ -1,7 +1,8 @@
 
 define("binding/main", ["binding/shape"], function(shape) {
   var $$;
+  ko.bindingHandlers.shape = shape;
   return $$ = {
-    shape: shape
+    shapeBinding: shape
   };
 });

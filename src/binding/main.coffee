@@ -3,6 +3,7 @@ define("binding/main",
         "binding/shape"
     ],
     (shape)->
+        ko.bindingHandlers.shape = shape
         $$ =
-            shape: shape
+            shapeBinding: shape
 )
