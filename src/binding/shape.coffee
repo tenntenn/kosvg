@@ -11,7 +11,6 @@ define("binding/shape",
                         $(element).attr(k, (m.toString() for m in value).join(" "))
                     else
                         $(element).attr(k, value)
-            ,
             update:(element, valueAccessor, allBindingsAccessor, viewModel)->
                 for k, v of valueAccessor()
                     value = ko.utils.unwrapObservable(v)
